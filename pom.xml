@@ -87,6 +87,11 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
                 <artifactId>spring-context-support</artifactId>
                 <version>${spring.version}</version>
             </dependency>
@@ -262,7 +267,16 @@
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib</artifactId>
+                <version>3.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.esotericsoftware</groupId>
+                <artifactId>reflectasm</artifactId>
+                <version>1.11.9</version>
+            </dependency>
             <!--apache commons-->
             <dependency>
                 <groupId>org.apache.commons</groupId>
@@ -289,7 +303,6 @@
                 <artifactId>commons-configuration2</artifactId>
                 <version>2.7</version>
             </dependency>
-
 
 
             <!--SpringBoot Starter Version-->
@@ -323,6 +336,28 @@
             <dependency>
                 <groupId>org.doraemon.framework</groupId>
                 <artifactId>doraemon-webmvc</artifactId>
+                <version>${doraemon-framework.version}</version>
+            </dependency>
+
+            <!--doraemon components-->
+            <dependency>
+                <groupId>org.doraemon.framework</groupId>
+                <artifactId>doraemon-component-id-generator</artifactId>
+                <version>${doraemon-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.doraemon.framework</groupId>
+                <artifactId>doraemon-component-mybatis-generator</artifactId>
+                <version>${doraemon-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.doraemon.framework</groupId>
+                <artifactId>doraemon-component-junit</artifactId>
+                <version>${doraemon-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.doraemon.framework</groupId>
+                <artifactId>doraemon-component-security</artifactId>
                 <version>${doraemon-framework.version}</version>
             </dependency>
             <dependency>
